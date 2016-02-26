@@ -1,0 +1,302 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="initial-scale=1, maximum-scale=1, user-scalable=no")
+        title xxxx网
+        link(href="css/bootstrap.min.css", rel="stylesheet")
+        link(href="css/bootstrap-theme.min.css", rel="stylesheet")
+        link(href="font-awesome/css/font-awesome.css", rel="stylesheet")
+        link(href="css/animate.css", rel="stylesheet")
+        link(href="css/style.css", rel="stylesheet")
+        link(href="css/page/main.css", rel="stylesheet")
+        script(src='js/jquery-1.10.2.js')
+        script(src="js/bootstrap.min.js")
+
+    body(style="background-color: #fff;")
+        .c-header 苏州厂房网
+        .c-nav-container
+            .c-wrapper
+                ul.c-nav.clearfix
+                    li.c-nav-li
+                        a.c-a 网站首页
+                    li.c-nav-li
+                        a.c-a 联系我们
+                    li.c-nav-li
+                        a.c-a 联系我们
+                    li.c-nav-li
+                        a.c-a 联系我们
+                    li.c-nav-li
+                        a.c-a 联系我们
+        .c-picture-container
+            .c-wrapper
+                #carousel-example-generic.c-picture-con.carousel.slide(data-ride="carousel")
+                    // Indicators
+                    ol.carousel-indicators
+                        li.active(data-target="#carousel-example-generic", data-slide-to="0")
+                        li(data-target="#carousel-example-generic", data-slide-to="1")
+                        li(data-target="#carousel-example-generic", data-slide-to="2")
+                    // Wrapper for slides
+                    .c-img-div.carousel-inner(role="listbox")
+                        .item.active
+                            img.c-img(src="...", alt="...")
+                            .carousel-caption 测试一下咯
+                        .item
+                            img.c-img(src="...", alt="...")
+                            .carousel-caption 测试一下咯
+                    // Controls
+                    a.left.carousel-control(href="#carousel-example-generic", role="button", data-slide="prev")
+                        span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+                        span.sr-only Previous
+                    a.right.carousel-control(href="#carousel-example-generic", role="button", data-slide="next")
+                        span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+                        span.sr-only Next
+        .c-list-container
+          .c-wrapper
+            .row
+              .c-list-div.col-md-6
+                .c-title
+                  span.title
+                    span.glyphicon.glyphicon-fire(aria-hidden="true")
+                    span  园区租售
+                ul
+                    each factory in factorys
+                        li [#{factory.type}]
+                            a(href="/detail/#{factory.id}") #{factory.title}
+                            span.time 2015-12-12
+
+              .c-list-div.col-md-6
+                .c-title
+                  span.title
+                    span.glyphicon.glyphicon-fire(aria-hidden="true")
+                    span  厂房租售
+                ul
+                  li [出租]
+                    a 出租2号桥附近厂房1000平方
+                    span.time 2015-12-12
+                  li [出租]
+                      a 出租2号桥附近厂房1000平方
+                      span.time 2015-12-12
+                  li [出租]
+                      a 出租2号桥附近厂房1000平方
+                      span.time 2015-12-12
+                  li [出租]
+                      a 出租2号桥附近厂房1000平方
+                      span.time 2015-12-12
+                  li [出租]
+                    a 出租2号桥附近厂房1000平方
+                    span.time 2015-12-12
+                  li [出租]
+                      a 出租2号桥附近厂房1000平方
+                      span.time 2015-12-12
+                  li [出租]
+                      a 出租2号桥附近厂房1000平方
+                      span.time 2015-12-12
+                  li [出租]
+                      a 出租2号桥附近厂房1000平方
+                      span.time 2015-12-12
+            .row
+              .c-list-div.col-md-6
+                .c-title
+                  span.title
+                    span.glyphicon.glyphicon-fire(aria-hidden="true")
+                    span  厂房租售
+                ul
+                  li [出租]
+                    a 出租2号桥附近厂房1000平方
+                    span.time 2015-12-12
+                  li [出租]
+                    a 出租2号桥附近厂房1000平方
+                    span.time 2015-12-12
+                  li [出租]
+                      a 出租2号桥附近厂房1000平方
+                      span.time 2015-12-12
+                  li [出租]
+                      a 出租2号桥附近厂房1000平方
+                      span.time 2015-12-12
+                  li [出租]
+                    a 出租2号桥附近厂房1000平方
+                    span.time 2015-12-12
+                  li [出租]
+                      a 出租2号桥附近厂房1000平方
+                      span.time 2015-12-12
+                  li [出租]
+                      a 出租2号桥附近厂房1000平方
+                      span.time 2015-12-12
+                  li [出租]
+                      a 出租2号桥附近厂房1000平方
+                      span.time 2015-12-12
+
+              .c-list-div.col-md-6
+                .c-title
+                  span.title
+                    span.glyphicon.glyphicon-fire(aria-hidden="true")
+                    span  厂房租售
+                ul
+                  li [出租]
+                    a 出租2号桥附近厂房1000平方
+                    span.time 2015-12-12
+                  li [出租]
+                      a 出租2号桥附近厂房1000平方
+                      span.time 2015-12-12
+                  li [出租]
+                      a 出租2号桥附近厂房1000平方
+                      span.time 2015-12-12
+                  li [出租]
+                      a 出租2号桥附近厂房1000平方
+                      span.time 2015-12-12
+                  li [出租]
+                    a 出租2号桥附近厂房1000平方
+                    span.time 2015-12-12
+                  li [出租]
+                      a 出租2号桥附近厂房1000平方
+                      span.time 2015-12-12
+                  li [出租]
+                      a 出租2号桥附近厂房1000平方
+                      span.time 2015-12-12
+                  li [出租]
+                      a 出租2号桥附近厂房1000平方
+                      span.time 2015-12-12
+            .row
+              .c-list-div.col-md-6
+                .c-title
+                  span.title
+                    span.glyphicon.glyphicon-fire(aria-hidden="true")
+                    span  厂房租售
+                ul
+                  li [出租]
+                    a 出租2号桥附近厂房1000平方
+                    span.time 2015-12-12
+                  li [出租]
+                    a 出租2号桥附近厂房1000平方
+                    span.time 2015-12-12
+                  li [出租]
+                      a 出租2号桥附近厂房1000平方
+                      span.time 2015-12-12
+                  li [出租]
+                      a 出租2号桥附近厂房1000平方
+                      span.time 2015-12-12
+                  li [出租]
+                    a 出租2号桥附近厂房1000平方
+                    span.time 2015-12-12
+                  li [出租]
+                      a 出租2号桥附近厂房1000平方
+                      span.time 2015-12-12
+                  li [出租]
+                      a 出租2号桥附近厂房1000平方
+                      span.time 2015-12-12
+                  li [出租]
+                      a 出租2号桥附近厂房1000平方
+                      span.time 2015-12-12
+
+              .c-list-div.col-md-6
+                .c-title
+                  span.title
+                    span.glyphicon.glyphicon-fire(aria-hidden="true")
+                    span  厂房租售
+                ul
+                  li [出租]
+                    a 出租2号桥附近厂房1000平方
+                    span.time 2015-12-12
+                  li [出租]
+                      a 出租2号桥附近厂房1000平方
+                      span.time 2015-12-12
+                  li [出租]
+                      a 出租2号桥附近厂房1000平方
+                      span.time 2015-12-12
+                  li [出租]
+                      a 出租2号桥附近厂房1000平方
+                      span.time 2015-12-12
+                  li [出租]
+                    a 出租2号桥附近厂房1000平方
+                    span.time 2015-12-12
+                  li [出租]
+                      a 出租2号桥附近厂房1000平方
+                      span.time 2015-12-12
+                  li [出租]
+                      a 出租2号桥附近厂房1000平方
+                      span.time 2015-12-12
+                  li [出租]
+                      a 出租2号桥附近厂房1000平方
+                      span.time 2015-12-12
+        .c-main-container.clearfix
+            .c-wrapper.clearfix
+              .c-header
+                .c-title
+                  span.title
+                    span.glyphicon.glyphicon-leaf(aria-hidden="true")
+                    span  热门推荐
+              .c-div.clearfix
+                .c-item
+                  div
+                      img
+                  .c-name 江中28万平厂房待租
+                  .c-area 面积：45000m
+                  .c-type 业态：综合
+                  .c-address 地址：就是一个很远的地方
+                .c-item
+                  div
+                      img
+                  .c-name 江中28万平厂房待租
+                  .c-area 面积：45000m
+                  .c-type 业态：综合
+                  .c-address 地址：就是一个很远的地方
+                .c-item
+                  div
+                      img
+                  .c-name 江中28万平厂房待租
+                  .c-area 面积：45000m
+                  .c-type 业态：综合
+                  .c-address 地址：就是一个很远的地方
+                .c-item
+                  div
+                      img
+                  .c-name 江中28万平厂房待租
+                  .c-area 面积：45000m
+                  .c-type 业态：综合
+                  .c-address 地址：就是一个很远的地方
+                .c-item
+                  div
+                      img
+                  .c-name 江中28万平厂房待租
+                  .c-area 面积：45000m
+                  .c-type 业态：综合
+                  .c-address 地址：就是一个很远的地方
+                .c-item
+                  div
+                      img
+                  .c-name 江中28万平厂房待租
+                  .c-area 面积：45000m
+                  .c-type 业态：综合
+                  .c-address 地址：就是一个很远的地方
+                .c-item
+                  div
+                      img
+                  .c-name 江中28万平厂房待租
+                  .c-area 面积：45000m
+                  .c-type 业态：综合
+                  .c-address 地址：就是一个很远的地方
+                .c-item
+                  div
+                      img
+                  .c-name 江中28万平厂房待租
+                  .c-area 面积：45000m
+                  .c-type 业态：综合
+                  .c-address 地址：就是一个很远的地方
+                .c-item
+                  div
+                      img
+                  .c-name 江中28万平厂房待租
+                  .c-area 面积：45000m
+                  .c-type 业态：综合
+                  .c-address 地址：就是一个很远的地方
+                .c-item
+                  div
+                      img
+                  .c-name 江中28万平厂房待租
+                  .c-area 面积：45000m
+                  .c-type 业态：综合
+                  .c-address 地址：就是一个很远的地方
+
+
+        script(src='js/page/main.js')

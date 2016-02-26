@@ -1,0 +1,40 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="initial-scale=1, maximum-scale=1, user-scalable=no")
+        title xxx
+        link(href="../css/bootstrap.min.css", rel="stylesheet")
+        link(href="../css/bootstrap-theme.min.css", rel="stylesheet")
+        link(href="../font-awesome/css/font-awesome.css", rel="stylesheet")
+        link(href="../css/animate.css", rel="stylesheet")
+        link(href="../css/style.css", rel="stylesheet")
+        link(href="../css/page/main.css", rel="stylesheet")
+        script(src='../js/jquery-1.10.2.js')
+        script(src="../js/bootstrap.min.js")
+
+    body(style="background-color: #fff;")
+        .c-header 苏州厂房网
+        .c-nav-container
+            .c-wrapper
+                ul.c-nav.clearfix
+                    li.c-nav-li
+                        a.c-a 网站首页
+                    li.c-nav-li
+                        a.c-a 联系我们
+                    li.c-nav-li
+                        a.c-a 联系我们
+                    li.c-nav-li
+                        a.c-a 联系我们
+                    li.c-nav-li
+                        a.c-a 联系我们
+        .c-detail-container
+            each factory in factorys
+                h2.c-detail-header #{factory.title}
+                img.c-detail-img(src="http://szdwcf.com/UpLoad/201602/2016021758723861.JPG")
+                h3.c-detail-area 地区：#{factory.area}
+                h3.c-detail-address 地址：#{factory.address}
+                h3.c-detail-acreage 面积：#{factory.acreage}
+                h3.c-detail-person 联系人：#{factory.person}
+                h3.c-detail-telephone 联系电话：#{factory.telephone}
+                h3.c-detail-description 详细描述：#{factory.description}
