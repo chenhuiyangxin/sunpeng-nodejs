@@ -58,9 +58,31 @@ html(lang="en")
                 .c-title
                   span.title
                     span.glyphicon.glyphicon-fire(aria-hidden="true")
-                    span  园区租售
+                    span  园区厂房出租
                 ul
-                    each factory in factorys
+                    each factory in yq_factorys
+                        li [#{factory.type}]
+                            a(href="/detail/#{factory.type_number}/#{factory.id}") #{factory.title}
+                            span.time 2015-12-12
+
+              .c-list-div.col-md-6
+                .c-title
+                  span.title
+                    span.glyphicon.glyphicon-fire(aria-hidden="true")
+                    span  吴中厂房出租
+                ul
+                    each factory in wz_factorys
+                        li [#{factory.type}]
+                            a(href="/detail/#{factory.type_number}/#{factory.id}") #{factory.title}
+                            span.time 2015-12-12
+            .row
+              .c-list-div.col-md-6
+                .c-title
+                  span.title
+                    span.glyphicon.glyphicon-fire(aria-hidden="true")
+                    span  新区厂房出租
+                ul
+                    each factory in xq_factorys
                         li [#{factory.type}]
                             a(href="/detail/#{factory.id}") #{factory.title}
                             span.time 2015-12-12
@@ -69,156 +91,34 @@ html(lang="en")
                 .c-title
                   span.title
                     span.glyphicon.glyphicon-fire(aria-hidden="true")
-                    span  厂房租售
+                    span  相城厂房出租
                 ul
-                  li [出租]
-                    a 出租2号桥附近厂房1000平方
-                    span.time 2015-12-12
-                  li [出租]
-                      a 出租2号桥附近厂房1000平方
-                      span.time 2015-12-12
-                  li [出租]
-                      a 出租2号桥附近厂房1000平方
-                      span.time 2015-12-12
-                  li [出租]
-                      a 出租2号桥附近厂房1000平方
-                      span.time 2015-12-12
-                  li [出租]
-                    a 出租2号桥附近厂房1000平方
-                    span.time 2015-12-12
-                  li [出租]
-                      a 出租2号桥附近厂房1000平方
-                      span.time 2015-12-12
-                  li [出租]
-                      a 出租2号桥附近厂房1000平方
-                      span.time 2015-12-12
-                  li [出租]
-                      a 出租2号桥附近厂房1000平方
-                      span.time 2015-12-12
+                    each factory in xc_factorys
+                        li [#{factory.type}]
+                            a(href="/detail/#{factory.id}") #{factory.title}
+                            span.time 2015-12-12
             .row
               .c-list-div.col-md-6
                 .c-title
                   span.title
                     span.glyphicon.glyphicon-fire(aria-hidden="true")
-                    span  厂房租售
+                    span  其他厂房出租
                 ul
-                  li [出租]
-                    a 出租2号桥附近厂房1000平方
-                    span.time 2015-12-12
-                  li [出租]
-                    a 出租2号桥附近厂房1000平方
-                    span.time 2015-12-12
-                  li [出租]
-                      a 出租2号桥附近厂房1000平方
-                      span.time 2015-12-12
-                  li [出租]
-                      a 出租2号桥附近厂房1000平方
-                      span.time 2015-12-12
-                  li [出租]
-                    a 出租2号桥附近厂房1000平方
-                    span.time 2015-12-12
-                  li [出租]
-                      a 出租2号桥附近厂房1000平方
-                      span.time 2015-12-12
-                  li [出租]
-                      a 出租2号桥附近厂房1000平方
-                      span.time 2015-12-12
-                  li [出租]
-                      a 出租2号桥附近厂房1000平方
-                      span.time 2015-12-12
+                    each factory in other_factorys
+                        li [#{factory.type}]
+                            a(href="/detail/#{factory.id}") #{factory.title}
+                            span.time 2015-12-12
 
               .c-list-div.col-md-6
                 .c-title
                   span.title
                     span.glyphicon.glyphicon-fire(aria-hidden="true")
-                    span  厂房租售
+                    span  土地出租出售
                 ul
-                  li [出租]
-                    a 出租2号桥附近厂房1000平方
-                    span.time 2015-12-12
-                  li [出租]
-                      a 出租2号桥附近厂房1000平方
-                      span.time 2015-12-12
-                  li [出租]
-                      a 出租2号桥附近厂房1000平方
-                      span.time 2015-12-12
-                  li [出租]
-                      a 出租2号桥附近厂房1000平方
-                      span.time 2015-12-12
-                  li [出租]
-                    a 出租2号桥附近厂房1000平方
-                    span.time 2015-12-12
-                  li [出租]
-                      a 出租2号桥附近厂房1000平方
-                      span.time 2015-12-12
-                  li [出租]
-                      a 出租2号桥附近厂房1000平方
-                      span.time 2015-12-12
-                  li [出租]
-                      a 出租2号桥附近厂房1000平方
-                      span.time 2015-12-12
-            .row
-              .c-list-div.col-md-6
-                .c-title
-                  span.title
-                    span.glyphicon.glyphicon-fire(aria-hidden="true")
-                    span  厂房租售
-                ul
-                  li [出租]
-                    a 出租2号桥附近厂房1000平方
-                    span.time 2015-12-12
-                  li [出租]
-                    a 出租2号桥附近厂房1000平方
-                    span.time 2015-12-12
-                  li [出租]
-                      a 出租2号桥附近厂房1000平方
-                      span.time 2015-12-12
-                  li [出租]
-                      a 出租2号桥附近厂房1000平方
-                      span.time 2015-12-12
-                  li [出租]
-                    a 出租2号桥附近厂房1000平方
-                    span.time 2015-12-12
-                  li [出租]
-                      a 出租2号桥附近厂房1000平方
-                      span.time 2015-12-12
-                  li [出租]
-                      a 出租2号桥附近厂房1000平方
-                      span.time 2015-12-12
-                  li [出租]
-                      a 出租2号桥附近厂房1000平方
-                      span.time 2015-12-12
-
-              .c-list-div.col-md-6
-                .c-title
-                  span.title
-                    span.glyphicon.glyphicon-fire(aria-hidden="true")
-                    span  厂房租售
-                ul
-                  li [出租]
-                    a 出租2号桥附近厂房1000平方
-                    span.time 2015-12-12
-                  li [出租]
-                      a 出租2号桥附近厂房1000平方
-                      span.time 2015-12-12
-                  li [出租]
-                      a 出租2号桥附近厂房1000平方
-                      span.time 2015-12-12
-                  li [出租]
-                      a 出租2号桥附近厂房1000平方
-                      span.time 2015-12-12
-                  li [出租]
-                    a 出租2号桥附近厂房1000平方
-                    span.time 2015-12-12
-                  li [出租]
-                      a 出租2号桥附近厂房1000平方
-                      span.time 2015-12-12
-                  li [出租]
-                      a 出租2号桥附近厂房1000平方
-                      span.time 2015-12-12
-                  li [出租]
-                      a 出租2号桥附近厂房1000平方
-                      span.time 2015-12-12
+                    each factory in land_factorys
+                        li [#{factory.type}]
+                            a(href="/detail/#{factory.id}") #{factory.title}
+                            span.time 2015-12-12
         .c-main-container.clearfix
             .c-wrapper.clearfix
               .c-header
