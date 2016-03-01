@@ -7,7 +7,7 @@ var plant4_data = null;
 var plant5_data = null;
 var plant6_data = null;
 
-  db.select('*').from('plant').limit(8)
+  db.select('*').from('plant1').limit(8)
   .then(function(resp) {
         plant1_data = resp;
   });
