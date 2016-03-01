@@ -23,17 +23,17 @@ html(lang="en")
                     li.c-nav-li
                         a.c-a(href="/record") 房源登记
                     li.c-nav-li
-                        a.c-a 联系我们
+                        a.c-a(href="/list/#{yq_factorys[0].type_number}") 园区厂房
                     li.c-nav-li
-                        a.c-a 联系我们
+                        a.c-a(href="/list/#{wz_factorys[0].type_number}") 吴中厂房
                     li.c-nav-li
-                        a.c-a 联系我们
+                        a.c-a(href="/list/#{xq_factorys[0].type_number}") 新区厂房
                     li.c-nav-li
-                        a.c-a 联系我们
+                        a.c-a(href="/list/#{xc_factorys[0].type_number}") 相城厂房
                     li.c-nav-li
-                        a.c-a 联系我们
+                        a.c-a(href="/list/#{other_factorys[0].type_number}") 其他厂房
                     li.c-nav-li
-                        a.c-a 联系我们
+                        a.c-a(href="/list/#{land_factorys[0].type_number}") 土地租售
         .c-picture-container
             .c-wrapper
                 #carousel-example-generic.c-picture-con.carousel.slide(data-ride="carousel")
@@ -90,7 +90,7 @@ html(lang="en")
                 ul
                     each factory in xq_factorys
                         li [#{factory.type}]
-                            a(href="/detail/#{factory.id}") #{factory.title}
+                            a(href="/detail/#{factory.type_number}/#{factory.id}") #{factory.title}
                             span.time 2015-12-12
 
               .c-list-div.col-md-6
@@ -101,7 +101,7 @@ html(lang="en")
                 ul
                     each factory in xc_factorys
                         li [#{factory.type}]
-                            a(href="/detail/#{factory.id}") #{factory.title}
+                            a(href="/detail/#{factory.type_number}/#{factory.id}") #{factory.title}
                             span.time 2015-12-12
             .row
               .c-list-div.col-md-6
@@ -112,7 +112,7 @@ html(lang="en")
                 ul
                     each factory in other_factorys
                         li [#{factory.type}]
-                            a(href="/detail/#{factory.id}") #{factory.title}
+                            a(href="/detail/#{factory.type_number}/#{factory.id}") #{factory.title}
                             span.time 2015-12-12
 
               .c-list-div.col-md-6
@@ -123,7 +123,7 @@ html(lang="en")
                 ul
                     each factory in land_factorys
                         li [#{factory.type}]
-                            a(href="/detail/#{factory.id}") #{factory.title}
+                            a(href="/detail/#{factory.type_number}/#{factory.id}") #{factory.title}
                             span.time 2015-12-12
         .c-main-container.clearfix
             .c-wrapper.clearfix

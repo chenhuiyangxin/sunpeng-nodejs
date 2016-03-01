@@ -36,7 +36,7 @@ var plant6_data = null;
   .then(function(resp) {
         plant6_data = resp;
   }).then(function(){
-  	res.render("record", {
+  	res.render("list", {
           yq_factorys:plant1_data,
           wz_factorys:plant2_data,
           xq_factorys:plant3_data,

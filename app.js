@@ -21,6 +21,8 @@ var routes = require("./routes");
 
 app.get('/main', routes.main);
 
+app.get('/list/:type_number', routes.list);
+
 app.get('/detail/:type_number/:id', routes.detail);
 
 app.get('/record', routes.record);

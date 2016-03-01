@@ -1,1 +1,38 @@
-list.jade
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="initial-scale=1, maximum-scale=1, user-scalable=no")
+        title xxxx网
+        link(href="/css/bootstrap.min.css", rel="stylesheet")
+        link(href="/css/bootstrap-theme.min.css", rel="stylesheet")
+        link(href="/font-awesome/css/font-awesome.css", rel="stylesheet")
+        link(href="/css/animate.css", rel="stylesheet")
+        link(href="/css/style.css", rel="stylesheet")
+        link(href="/css/page/main.css", rel="stylesheet")
+        script(src='/js/jquery-1.10.2.js')
+        script(src="/js/bootstrap.min.js")
+
+    body(style="background-color: #fff;")
+        .c-header 苏州厂房网
+        .c-nav-container
+            .c-wrapper
+                ul.c-nav.clearfix
+                    li.c-nav-li
+                        a.c-a(href="/main") 网站首页
+                    li.c-nav-li
+                        a.c-a(href="/record") 房源登记
+                    li.c-nav-li
+                        a.c-a(href="/list/#{yq_factorys[0].type_number}") 园区厂房
+                    li.c-nav-li
+                        a.c-a(href="/list/#{wz_factorys[0].type_number}") 吴中厂房
+                    li.c-nav-li
+                        a.c-a(href="/list/#{xq_factorys[0].type_number}") 新区厂房
+                    li.c-nav-li
+                        a.c-a(href="/list/#{xc_factorys[0].type_number}") 相城厂房
+                    li.c-nav-li
+                        a.c-a(href="/list/#{other_factorys[0].type_number}") 其他厂房
+                    li.c-nav-li
+                        a.c-a(href="/list/#{land_factorys[0].type_number}") 土地租售
+        .c-list-container
+        h2 园区厂房出租
