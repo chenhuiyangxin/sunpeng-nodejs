@@ -133,76 +133,15 @@ html(lang="en")
                     span.glyphicon.glyphicon-leaf(aria-hidden="true")
                     span  热门推荐
               .c-div.clearfix
-                .c-item
-                  div
-                      img
-                  .c-name 江中28万平厂房待租
-                  .c-area 面积：45000m
-                  .c-type 业态：综合
-                  .c-address 地址：就是一个很远的地方
-                .c-item
-                  div
-                      img
-                  .c-name 江中28万平厂房待租
-                  .c-area 面积：45000m
-                  .c-type 业态：综合
-                  .c-address 地址：就是一个很远的地方
-                .c-item
-                  div
-                      img
-                  .c-name 江中28万平厂房待租
-                  .c-area 面积：45000m
-                  .c-type 业态：综合
-                  .c-address 地址：就是一个很远的地方
-                .c-item
-                  div
-                      img
-                  .c-name 江中28万平厂房待租
-                  .c-area 面积：45000m
-                  .c-type 业态：综合
-                  .c-address 地址：就是一个很远的地方
-                .c-item
-                  div
-                      img
-                  .c-name 江中28万平厂房待租
-                  .c-area 面积：45000m
-                  .c-type 业态：综合
-                  .c-address 地址：就是一个很远的地方
-                .c-item
-                  div
-                      img
-                  .c-name 江中28万平厂房待租
-                  .c-area 面积：45000m
-                  .c-type 业态：综合
-                  .c-address 地址：就是一个很远的地方
-                .c-item
-                  div
-                      img
-                  .c-name 江中28万平厂房待租
-                  .c-area 面积：45000m
-                  .c-type 业态：综合
-                  .c-address 地址：就是一个很远的地方
-                .c-item
-                  div
-                      img
-                  .c-name 江中28万平厂房待租
-                  .c-area 面积：45000m
-                  .c-type 业态：综合
-                  .c-address 地址：就是一个很远的地方
-                .c-item
-                  div
-                      img
-                  .c-name 江中28万平厂房待租
-                  .c-area 面积：45000m
-                  .c-type 业态：综合
-                  .c-address 地址：就是一个很远的地方
-                .c-item
-                  div
-                      img
-                  .c-name 江中28万平厂房待租
-                  .c-area 面积：45000m
-                  .c-type 业态：综合
-                  .c-address 地址：就是一个很远的地方
+                each factory in rc_factorys
+                  .c-item
+                    div
+                        img
+                    .c-name #{factory.title}
+                    .c-area 面积：#{factory.acreage}
+                    .c-type 业态：#{factory.kind}
+                    .c-address 地址：#{factory.address}
+                
 
 
         script(src='js/page/main.js')

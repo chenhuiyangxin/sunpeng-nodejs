@@ -75,7 +75,7 @@
 }
 .c-main-container .c-div .c-item{
   display: inline-block;
-  height: 200px;
+  height: 212px;
   width: 183px;
   padding: 5px;
   margin: 10px 10px;
@@ -88,6 +88,10 @@
   width: 172px;
   height: 100px;
   vertical-align: middle;
+}
+
+.c-item .c-name{
+  height: 40px;
 }
 /*全局用到的*/
 .c-wrapper{

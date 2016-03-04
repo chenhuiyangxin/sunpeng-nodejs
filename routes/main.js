@@ -35,18 +35,26 @@ var plant6_data = null;
   db.select('*').from('plant6').limit(8)
   .then(function(resp) {
         plant6_data = resp;
+  });
+
+  db.select('*').from('recommand').limit(10)
+  .then(function(resp) {
+        recommand_data = resp;
   }).then(function(){
-  	res.render("main", {
+    res.render("main", {
           yq_factorys:plant1_data,
           wz_factorys:plant2_data,
           xq_factorys:plant3_data,
           xc_factorys:plant4_data,
           other_factorys:plant5_data,
-          land_factorys:plant6_data
+          land_factorys:plant6_data,
+          rc_factorys:recommand_data
 
 
         });
   });
+
+
 
 
 }
