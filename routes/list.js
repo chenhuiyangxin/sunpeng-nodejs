@@ -36,16 +36,21 @@ var plant6_data = null;
   .then(function(resp) {
         plant6_data = resp;
   }).then(function(){
-  	res.render("list", {
+  	var type_number = req.params.type_number;
+  	console.log(type_number);
+  	db.select('*').from('plant'+type_number).then(function(resp) {
+          res.render("list", {
+          factorys:resp,
           yq_factorys:plant1_data,
           wz_factorys:plant2_data,
           xq_factorys:plant3_data,
           xc_factorys:plant4_data,
           other_factorys:plant5_data,
           land_factorys:plant6_data
+        	});
+  		});
 
 
-        });
   });
 
 }

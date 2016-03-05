@@ -40,7 +40,14 @@ var plant6_data = null;
 	var type_number = req.params.type_number;
 console.log(type_number);
 	function plants (num){
-		db.select('*').from('plant'+num).where('id',id).then(function(resp) {
+		var plant = null;
+		if(num == 7){
+			plant = 'recommand';
+		}
+		else{
+			plant = 'plant' + num;
+		}
+		db.select('*').from(plant).where('id',id).then(function(resp) {
         	res.render("detail", {
           	factorys:resp,
           	yq_factorys:plant1_data,

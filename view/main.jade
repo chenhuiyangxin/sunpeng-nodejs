@@ -134,7 +134,7 @@ html(lang="en")
                     span  热门推荐
               .c-div.clearfix
                 each factory in rc_factorys
-                  .c-item
+                  a(href="/detail/#{factory.type_number}/#{factory.id}").c-item
                     div
                         img
                     .c-name #{factory.title}
