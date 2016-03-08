@@ -132,7 +132,13 @@
 }
 
 
+/*list*/
 
+.list-group{
+  width: 700px;
+  margin: 0 auto;
+  font-size: 16px;
+}
 
 
 
