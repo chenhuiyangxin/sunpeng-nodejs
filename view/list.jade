@@ -35,9 +35,8 @@ html(lang="en")
                     li.c-nav-li
                         a.c-a(href="/list/#{land_factorys[0].type_number}") 土地租售
         .c-list-container
-        h2 #{factorys[0].area}
-        ul
-        	each factory in factorys
-        		li [#{factory.type}]
-                    a(href="/detail/#{factory.type_number}/#{factory.id}") #{factory.title}
-                    span.time 2015-12-12
+            h2 #{factorys[0].area}
+            .list-group
+                each factory in factorys
+                    a(href="/detail/#{factory.type_number}/#{factory.id}").list-group-item [#{factory.type}] #{factory.title}
+                        span.badge 2015-12-12
