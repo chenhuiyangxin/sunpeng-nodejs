@@ -131,6 +131,10 @@
   color: black;
 }
 
+.c-record-container .form-control{
+  border-radius: 5px;
+}
+
 
 /*list*/
 
