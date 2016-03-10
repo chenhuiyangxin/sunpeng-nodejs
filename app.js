@@ -27,6 +27,8 @@ app.get('/detail/:type_number/:id', routes.detail);
 
 app.get('/record', routes.record);
 
+app.post('/main/new',routes.news);
+
 
 
 

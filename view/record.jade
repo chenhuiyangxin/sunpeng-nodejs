@@ -37,25 +37,42 @@ html(lang="en")
         .c-record-container
             form.form-horizontal(method="post",action="/main/new")
                 .form-group
-                    label.col-md-2.control-label 标题
+                    label.col-md-2.control-label 类型
                     .col-md-6
-                        input.form-control(type="text")
+                        select.form-control(name="records[type]")
+                            option 出租
+                            option 出售
                 .form-group
-                    label.col-md-2.control-label 联系人
+                    label.col-md-2.control-label 地区
                     .col-md-6
-                        input.form-control(type="text")
-                .form-group
-                    label.col-md-2.control-label 联系电话
-                    .col-md-6
-                        input.form-control(type="text")
+                        select.form-control(name="records[area]")
+                            option 园区厂房出租
+                            option 吴中厂房出租
+                            option 新区厂房出租
+                            option 相城厂房出租
+                            option 其他厂房出租
+                            option 土地出租出售
                 .form-group
                     label.col-md-2.control-label 地址
                     .col-md-6
-                        input.form-control(type="text")
+                        input.form-control(type="text",name="records[address]")
+                .form-group
+                    label.col-md-2.control-label 面积
+                    .col-md-6
+                        input.form-control(type="text",name="records[acreage]")
+                .form-group
+                    label.col-md-2.control-label 联系人
+                    .col-md-6
+                        input.form-control(type="text",name="records[person]")
+                .form-group
+                    label.col-md-2.control-label 联系电话
+                    .col-md-6
+                        input.form-control(type="text",name="records[telephone]")
+                
                 .form-group
                     label.col-md-2.control-label 详细描述
                     .col-md-6
-                        textarea.form-control(rows="4")
+                        textarea.form-control(rows="4",name="records[description]")
                 .form-group
                     .col-sm-offset-2.col-sm-5
                     button.btn.btn-default(type="submit") 提交

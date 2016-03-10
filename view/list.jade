@@ -34,8 +34,8 @@ html(lang="en")
                         a.c-a(href="/list/#{other_factorys[0].type_number}") 其他厂房
                     li.c-nav-li
                         a.c-a(href="/list/#{land_factorys[0].type_number}") 土地租售
-        .c-list-container
-            h2 #{factorys[0].area}
+        .container
+            h2.c-list-h2 #{factorys[0].area}
             .list-group
                 each factory in factorys
                     a(href="/detail/#{factory.type_number}/#{factory.id}").list-group-item [#{factory.type}] #{factory.title}
