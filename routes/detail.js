@@ -38,7 +38,6 @@ var plant6_data = null;
   }).then(function(){
 	var id = req.params.id;
 	var type_number = req.params.type_number;
-console.log(type_number);
 	function plants (num){
 		var plant = null;
 		if(num == 7){

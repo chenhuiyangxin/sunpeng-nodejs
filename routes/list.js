@@ -37,7 +37,6 @@ var plant6_data = null;
         plant6_data = resp;
   }).then(function(){
   	var type_number = req.params.type_number;
-  	console.log(type_number);
   	db.select('*').from('plant'+type_number).then(function(resp) {
           res.render("list", {
           factorys:resp,

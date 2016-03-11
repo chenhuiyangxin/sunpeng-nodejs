@@ -63,6 +63,15 @@
   float: right;
 }
 
+.c-list-div .more{
+  font-size: 14px;
+  float: right;
+}
+
+.c-list-div>.more>a{
+  color: #FF7300;
+}
+
 /*下面的推荐层*/
 .c-main-container .c-header{
   height: 44px;
