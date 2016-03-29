@@ -45,7 +45,7 @@
 }
 /*轮播层*/
 .c-picture-con .c-img-div img.c-img{
-    width:900px;
+    width:100%;
     height: 300px;
 }
 /*列表推荐层*/
@@ -110,8 +110,8 @@
 
 /*detail页面*/
 .c-detail-container{
-  margin: 0 auto;
-  width: 900px;
+  margin: 0 auto 10px;
+  width: 1020px;
   border: solid 1px grey;
   padding-left: 20px;
 }
@@ -149,7 +149,7 @@
 
 .list-group{
   width: 700px;
-  margin: 0 auto;
+  margin: 0 auto 10px;
   font-size: 16px;
 }
 
@@ -159,11 +159,22 @@
   margin-right: auto;
 }
 
+/*footer*/
 
+.c-hr{
+  height: 2px;
+  margin-bottom: 10px;
+  background-color: #FF7300;
+}
 
+.footer-left{
+  float:left;
+  margin-right: 600px;
+}
 
-
-
+.c-footer-wrapper{
+  background-color: #f8f8f8;
+}
 
 
 
