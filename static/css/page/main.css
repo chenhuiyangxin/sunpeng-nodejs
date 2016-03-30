@@ -170,6 +170,7 @@
 .footer-left{
   float:left;
   margin-right: 600px;
+  margin-left: 12px;
 }
 
 .c-footer-wrapper{
